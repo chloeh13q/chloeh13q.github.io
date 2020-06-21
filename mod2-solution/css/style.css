@@ -1,1 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
 
+h1 {
+    margin-bottom: 15px;
+    font-size: 175%;
+    text-align: center;
+}
+
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+}
+
+section {
+    position: relative;
+    border: 1px solid black;
+    padding: 30px 10px 10px 10px;
+    background: grey;
+    color: white;
+    font-size: 57%;
+    margin: 0.5%;
+    height: 100px;
+}
+
+section>h2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid black;
+    padding: 5px 50px 5px 50px;
+    margin: 0;
+    font-size: 125%;
+}
+
+#sec1 {
+    background: rgb(114, 114, 165);
+}
+
+#sec2 {
+    background: burlywood;
+}
+
+#sec3 {
+    background: darkslateblue;
+}
+
+
+/********** Desktop view **********/
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 32.33%;
+    }
+}
+
+
+/********** Tablet view **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 49%;
+    }
+    .col-md-12 {
+        width: 99%;
+    }
+}
+
+
+/********** Mobile view **********/
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 99%;
+    }
+}
